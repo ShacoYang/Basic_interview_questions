@@ -15,16 +15,15 @@ public class LinkedList<E> implements Iterable<E> {
     Node<E>[] lastModifiedNode;
     Node<E> first;
     Node<E> last;
+
+
+
     public static class Node<E> {
         protected E value;
         protected Node next;
 
         public E getValue() {
             return value;
-        }
-
-        public Node getNext() {
-            return next;
         }
 
         @Override
@@ -124,6 +123,10 @@ constant time = O(n) since creation is O (n) n = size of this the array
         }
         return origFirst;
     }
+
+
+
+
     //remove at index
     protected Node<E> removeAtIndex(int index) {
         if (index >= length || index < 0) {
